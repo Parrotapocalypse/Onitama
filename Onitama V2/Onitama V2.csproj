@@ -6,6 +6,13 @@
     <RootNamespace>Onitama</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <AssemblyName>$(MSBuildProjectName)</AssemblyName>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="src\**" />
+    <EmbeddedResource Remove="src\**" />
+    <None Remove="src\**" />
+  </ItemGroup>
 
 </Project>

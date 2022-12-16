@@ -28,12 +28,12 @@ namespace Onitama
 			Parser.chosenCards[1].Print();
 			board = board.MakeMove(Parser.Parse());
 			board.Print();
-			Piece? othermaster = Piece.GetMaster(board, ConsoleColor.Red);
-			Piece? thismaster = Piece.GetMaster(board, ConsoleColor.Blue);
+			Piece? othermaster = Piece.GetMaster(board, ConsoleColor.Blue);
+			Piece? thismaster = Piece.GetMaster(board, ConsoleColor.Red);
 			bool? win = null;
 			// something inelegant has to happen with this because I don't want to call position on a null object, which happens without the is not null check.
-			if (othermaster is null || (thismaster is not null && thismaster.position == (2, 4))) win = true;
-			if (thismaster is null || othermaster!.position == (2, 0)) win = false;
+			if (othermaster is null || (thismaster is not null && thismaster.position == (2, 0))) win = true;
+			if (thismaster is null || othermaster!.position == (2, 4)) win = false;
 			if (win != null)
 			{
 				if ((bool)win)
@@ -64,16 +64,16 @@ namespace Onitama
 			if (win != null)
 			{
 				if ((bool)win)
-                {
-                    Parser.LogLine("You win!", ConsoleColor.Green);
-                }
-                else
-                {
-                    Parser.LogLine("You lose...", ConsoleColor.DarkYellow);
-                }
-                Parser.LogLine("Thanks for playing!");
-                Task.Delay(-1);
-            }
+				{
+					Parser.LogLine("You win!", ConsoleColor.Green);
+				}
+				else
+				{
+					Parser.LogLine("You lose...", ConsoleColor.DarkYellow);
+				}
+				Parser.LogLine("Thanks for playing!");
+				Task.Delay(-1);
+			}
 			HumanTurn();
 		}
 	}
