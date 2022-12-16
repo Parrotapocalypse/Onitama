@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Onitama V2", "Onitama V2\Onitama V2.csproj", "{6AEDF86F-E159-4C84-B5A1-C67BA971883F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6AEDF86F-E159-4C84-B5A1-C67BA971883F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AEDF86F-E159-4C84-B5A1-C67BA971883F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AEDF86F-E159-4C84-B5A1-C67BA971883F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AEDF86F-E159-4C84-B5A1-C67BA971883F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FBBD0F09-8177-4B2B-A363-8E9DEC9B4EBB}
+	EndGlobalSection
+EndGlobal
