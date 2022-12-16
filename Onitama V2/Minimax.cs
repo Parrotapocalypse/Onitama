@@ -62,7 +62,7 @@ namespace Onitama
 		internal static bool? EvaluateWin(Board board, out int v)
 		{
 			ConsoleColor c = board.previousmove?.piece.color ?? Game.cpu.color;
-			ConsoleColor othercolor = Utils.Not(c); // opponent's color
+			ConsoleColor othercolor = ConsoleColor.Red; // opponent's color; maybe one day this won't be hardcoded
 			static int YInitial(ConsoleColor color) => color == ConsoleColor.Red ? 4 : 0; // red pieces start at index 4 in the array and blue ones at 0
 			Piece? othermaster = Piece.GetMaster(board, othercolor);
 			Piece? thismaster = Piece.GetMaster(board, c);
